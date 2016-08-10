@@ -1,3 +1,5 @@
+// Will probably do this in Kinvey for security:
+
 $.ajax({
   url: 'https://api.traitify.com/v1/assessments',
   headers: {
