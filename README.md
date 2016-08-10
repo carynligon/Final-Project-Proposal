@@ -192,4 +192,5 @@ Login: /login
 Signup: /signup
 Appendix: /appendix
 Sorted Appendix: /appendix/:type
+NotFound: /oops
 ```
