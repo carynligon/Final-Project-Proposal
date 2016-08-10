@@ -182,6 +182,7 @@
 
 #### Routes
 ```
+Confirm over 21: /confirm
 Home/Search: /
 Recipe: /recipe/:cocktails
 Bartender's Choice: /surprise
