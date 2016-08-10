@@ -35,6 +35,7 @@
   ```javascript
   urlRoot:`https://baas.kinvey.com/appdata/${settings.appKey}/cocktails`,
   name: 'Negroni',
+  skill_level: 2,
   ingredients: [
     {
       ingredient: 'Campari',
@@ -86,6 +87,52 @@
 
   - Assessment Model
   ```javascript
+  urlRoot: `https://api.traitify.com/v1/assessments`,
+  assessmentId: 'acff3436-2801-4b13-90b3-25eeeceffba9',
+  deck_id: 'core',
+  created_at: 234435646445
+  ```
+
+  - Question Collection
+  ```javascript
+  url: `https://api.traitify.com/v1/assessments/${assessment_id}/slides`,
+  model: QuestionMod
+  ```
+  - Question Model
+  ```javascript
+  urlRoot: `https://api.traitify.com/v1/assessments/${assessment_id}`,
+  id: '7c3f284b-a4f3-408c-83b6-e6ba5f8f9d88',
+  completed_at: 324234324,
+  personality_blend: [
+    {
+      personality_trait: 'adventurous',
+      score: 56
+    },
+    {
+      personality_trait: 'charismatic',
+      score: 77
+    },
+    {
+      personality_trait: 'mellow',
+      score: 43
+    },
+    {
+      personality_trait: 'rational',
+      score: 88
+    },
+    {
+      personality_trait: 'reliable',
+      score: 96
+    },
+    {
+      personality_trait: 'social',
+      score: 36
+    },
+    {
+      personality_trait: 'thoughtful',
+      score: 31
+    },
+  ]
   ```
 
   - Appendix Collection
@@ -133,6 +180,15 @@
   }
   ```
 
-list all front end models/collections you anticipate using for your app. provide sample JSON for each model. explain relationships between models where they exist.
-routes: list all anticipated routes will your application have. describe the basic flow of a user through your application
-libraries/special features: list any 3rd party libraries or special features you will use for your app. include things such as image uploading, geolocation, etc.
+#### Routes
+```
+Home/Search: /
+Recipe: /recipe/:cocktails
+Bartender's Choice: /surprise
+  Test Results: /surprise/results
+Profile: /profile/:user
+Login: /login
+Signup: /signup
+Appendix: /appendix
+Sorted Appendix: /appendix/:type
+```
